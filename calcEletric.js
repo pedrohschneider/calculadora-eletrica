@@ -5,11 +5,12 @@ if (tipo == 1) {
 
     let potenciaWatt = parseInt(prompt("Insira a potência do seu aparelho (em Watt): "))
     let tempoUso = parseInt(prompt("Digite o tempo de uso diário desse aparelho (em horas): "))
+    let valor = parseFloat(prompt("Digite o valor da taxa do Quilowatt: "))
 
     let consumoDiario = (potenciaWatt * tempoUso) / 1000
     let consumoMensal = consumoDiario * 30
     
-    let custoDiario = consumoDiario * 0.9
+    let custoDiario = consumoDiario * valor
     let custoMensal = custoDiario * 30
 
     console.log("Aparelho:", eletronico)
@@ -21,11 +22,12 @@ else if (tipo == 2) {
 
     let potenciaKW = parseInt(prompt("Insira a potência do seu aparelho (em kW): "))
     let tempoUso = parseInt(prompt("Digite o tempo de uso diário desse aparelho (em horas): "))
+    let valor = parseFloat(prompt("Digite o valor da taxa do Quilowatt: "))
 
     let consumoDiario = potenciaKW * tempoUso
     let consumoMensal = consumoDiario * 30
 
-    let custoDiario = consumoDiario * 0.9
+    let custoDiario = consumoDiario * valor
     let custoMensal = custoDiario * 30
 
     console.log("Aparelho:", eletronico)
