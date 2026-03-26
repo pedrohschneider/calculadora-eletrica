@@ -1,4 +1,5 @@
-let eletronico = prompt("Digite o nome do aparelho eletrônico: ")
+function consumo(){
+    let eletronico = prompt("Digite o nome do aparelho eletrônico: ")
 let tipo = parseInt(prompt("Qual é a unidade de potência do seu aparelho?\n1 - Watt\n2 - Quilowatt"))
 
 if (tipo == 1) {
@@ -37,4 +38,5 @@ else if (tipo == 2) {
 }
 else{
     console.log("Tipo de unidade inválido.")
+}
 }
